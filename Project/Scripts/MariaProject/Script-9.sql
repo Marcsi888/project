@@ -1,0 +1,3 @@
+ALTER TABLE courses
+ADD COLUMN StudentID INT,
+ADD COLUMN DegreeProgram VARCHAR(50);

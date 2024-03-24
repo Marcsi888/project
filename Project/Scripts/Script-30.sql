@@ -1,0 +1,20 @@
+INSERT INTO courses (CourseID, CourseName, CourseCode, Schedule, Edition, ProfID, StudentID, DegreeProgram, MajorID)
+VALUES 
+    (1, 'Introduction to Computer Science', 'CS101', 'Mon-Wed-Fri 9:00-10:30', 'Fall 2022', 1, 1, 'Bachelor of Science in Computer Science', 1),
+    (2, 'Database Management Systems', 'CS201', 'Tue-Thu 11:00-12:30', 'Spring 2023', 2, 2, 'Bachelor of Science in Computer Science', 1),
+    (3, 'Data Structures and Algorithms', 'CS301', 'Mon-Wed 14:00-15:30', 'Fall 2023', 3, 3, 'Bachelor of Science in Computer Science', 1),
+    (4, 'Web Development', 'CS401', 'Tue-Thu 9:00-10:30', 'Spring 2024', 4, 4, 'Bachelor of Science in Computer Science', 1),
+    (5, 'Chemistry Fundamentals', 'CHEM201', 'Tue-Thu 11:00-12:30', 'Fall 2023', 5, 4, 'Bachelor of Science in Chemistry', 3 ),
+    (6, 'Software Engineering', 'CS601', 'Tue-Thu 13:00-14:30', 'Spring 2024', 1, 3, 'Bachelor of Science in Computer Science', 1),
+    (7, 'Computer Networks', 'CS701', 'Mon-Wed-Fri 11:00-12:30', 'Spring 2024', 2, 2, 'Bachelor of Science in Computer Science', 1),
+    (8, 'Operating Systems', 'CS801', 'Tue-Thu 14:00-15:30', 'Spring 2024', 3, 1, 'Bachelor of Science in Computer Science', 1),
+    (9, 'Computer Graphics', 'CS901', 'Mon-Wed-Fri 15:30-17:00', 'Spring 2024', 4, 2, 'Bachelor of Science in Computer Science', 1),
+    (10,'Introduction to Biology', 'BIO101', 'Mon-Wed-Fri 9:00-10:30', 'Spring 2024', 5, 2,  'Bachelor of Science in Biology', 2),
+    (11, 'Introduction to Mehcanical Engineering', 'ENG101', 'Mon-Wed-Fri 9:00-10:30', 'Fall 2023', 20, 1, 'Bachelor of Science in Engineering', 11),
+    (12,'Introduction to Physics', 'PHY301', 'Mon-Wed 14:00-15:30', 'Summer 2023', 4, 1, 'Bachelor of Science in Physics', 4),
+    (13,'Principles of Economics', 'ECO401', 'Tue-Thu 9:00-10:30', 'Fall 2022', 3, 2, 'Bachelor of Arts in Economics', 5),
+    (14,'History of Art', 'ART501', 'Mon-Wed-Fri 13:00-14:30', 'Spring 2023', 2, 3, 'Bachelor of Arts in Art History', 6),
+    (15,'Introduction to Psychology', 'PSY601', 'Tue-Thu 13:00-14:30', 'Summer 2022', 1, 1, 'Bachelor of Arts in Psychology', 7),
+    (16,'Literature Survey', 'LIT701', 'Mon-Wed-Fri 11:00-12:30', 'Fall 2024', 2,4, 'Bachelor of Arts in English Literature', 8),
+    (17,'Political Science', 'POL801', 'Tue-Thu 14:00-15:30', 'Spring 2022', 3, 3,'Bachelor of Arts in Political Science', 9),
+    (18,'Introduction to Music', 'MUS901', 'Mon-Wed-Fri 15:30-17:00', 'Summer 2024',6 ,4, 'Bachelor of Arts in Music', 10);

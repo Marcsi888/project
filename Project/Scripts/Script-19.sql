@@ -1,0 +1,3 @@
+ALTER TABLE studentdb.internship
+ADD COLUMN DeanID INT,
+ADD FOREIGN KEY (DeanID) REFERENCES dean(DeanID);
