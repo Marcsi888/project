@@ -1,0 +1,2 @@
+insert into internship(FirstName, Lastname, BirthDate, CompanyName, position, startdate, duration, end_date, MajorID, InternshipID, StudentID, DeanID)
+values('Emily', 'Brown', '2000-12-05', 'alanata21','cleaner','2024-01-02','7', '2024-08-02', 3, 2, 4,2 );

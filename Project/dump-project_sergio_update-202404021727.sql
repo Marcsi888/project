@@ -1,6 +1,6 @@
--- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.3.0, for Win64 (x86_64)
 --
--- Host: localhost    Database: project_sergio
+-- Host: localhost    Database: project_sergio_update
 -- ------------------------------------------------------
 -- Server version	8.3.0
 
@@ -242,12 +242,13 @@ DROP TABLE IF EXISTS `salaries`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `salaries` (
-  `employee_id` int NOT NULL AUTO_INCREMENT,
+  `employee_id` varchar(32) NOT NULL,
+  `date_sent` varchar(32) NOT NULL,
   `hours_worked` char(4) DEFAULT NULL,
   `pay_per_hour` varchar(32) DEFAULT NULL,
   `total_pay` varchar(32) NOT NULL,
   `payment_method` varchar(64) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`)
+  PRIMARY KEY (`employee_id`,`date_sent`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -257,6 +258,7 @@ CREATE TABLE `salaries` (
 
 LOCK TABLES `salaries` WRITE;
 /*!40000 ALTER TABLE `salaries` DISABLE KEYS */;
+INSERT INTO `salaries` VALUES ('C1','2/04/2024','80','$12','$960','CASH'),('M1','2/04/2024','80','$20','$1600','BANK TRANSFER'),('S1','2/04/2024','45','$9','$405','CASH');
 /*!40000 ALTER TABLE `salaries` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -268,7 +270,7 @@ DROP TABLE IF EXISTS `supervision`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `supervision` (
-  `employee_id` int NOT NULL AUTO_INCREMENT,
+  `employee_id` varchar(32) NOT NULL,
   `building_id` char(4) DEFAULT NULL,
   `morning_or_afternoon` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`employee_id`)
@@ -281,11 +283,12 @@ CREATE TABLE `supervision` (
 
 LOCK TABLES `supervision` WRITE;
 /*!40000 ALTER TABLE `supervision` DISABLE KEYS */;
+INSERT INTO `supervision` VALUES ('S1','1','AFTERNOON');
 /*!40000 ALTER TABLE `supervision` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping routines for database 'project_sergio'
+-- Dumping routines for database 'project_sergio_update'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -297,4 +300,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-02 16:07:15
+-- Dump completed on 2024-04-02 17:27:15
