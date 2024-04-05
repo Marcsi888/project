@@ -200,7 +200,7 @@ CREATE TABLE `maintanance` (
 
 LOCK TABLES `maintanance` WRITE;
 /*!40000 ALTER TABLE `maintanance` DISABLE KEYS */;
-INSERT INTO `maintanance` VALUES (1,'M1','1','319'),(2,'M1','1','208');
+INSERT INTO `maintanance` VALUES (1,'M1','1','1'),(2,'M1','1','2');
 /*!40000 ALTER TABLE `maintanance` ENABLE KEYS */;
 UNLOCK TABLES;
 
