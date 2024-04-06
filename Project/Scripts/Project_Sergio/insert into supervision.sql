@@ -1,5 +1,4 @@
-insert into supervision (employee_id, building_id, morning_or_afternoon)
+insert into maintanance (maintanance_id, employee_id, building_id, apartment_id)
 values
-('S2', '2',' AFTERNOON'),
-('S3','3', 'AFTERNOON'),
-('S4', '4', 'MORNING');
+('3', 'M3', '2', '10'),
+('4', 'M1', '2', '')
